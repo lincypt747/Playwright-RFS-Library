@@ -25,4 +25,8 @@ This project leverages Playwright with TypeScript to automate and validate key f
 
 ## Instructions:
 
+Run `npm install` to install the required dependencies
+
+Run `npx playwright install chromium` to install chromium
+
 Rename the **.env-sample** to **.env** and update the variables to connect to MySQL DB
