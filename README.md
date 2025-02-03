@@ -1,4 +1,4 @@
-# Playwright Test Automation for RFS Library management System:
+# Playwright Test Automation for RFS Library Management System:
 
 This project leverages Playwright with TypeScript to automate and validate key functionalities of RFS Library Management System
 
