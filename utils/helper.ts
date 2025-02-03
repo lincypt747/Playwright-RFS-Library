@@ -20,13 +20,13 @@ export const getFirstUser= async () => {
   return rows;
 };
 
-// avaialble books
+// available books
 export const getAvailableBooksFromDB = async () => {
   const rows = await executeQuery('SELECT title FROM books WHERE status = "available"');
   return rows;
 };
 
-// unavaialble books
+// unavailable books
 export const getUnavailableBooksFromDB = async () => {
   const rows = await executeQuery('SELECT title FROM books WHERE status != "available"');
   return rows;

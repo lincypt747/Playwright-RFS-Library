@@ -8,17 +8,15 @@ test.describe("Books Page verification", () => {
     await resetDatabase();
   });
 
-  test("User should be able to login", async ({ page }) => {
+  test("Books list should be visible", async ({ page }) => {
     const rows = await getFirstUser();
     const userName = rows[0].name;
     const loginPage = new LoginPage(page);
+    const booksPage = new BooksPage(page);
     await loginPage.goto("http://localhost:3000");
     await loginPage.selectUser(userName);
     await loginPage.enterSystem();
     await loginPage.verifyLoginSuccess();
-  });
-  test("Books list should be visible", async ({ page }) => {
-    const booksPage = new BooksPage(page);
     await booksPage.verifyBooksDisplayed();
   });
 });

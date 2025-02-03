@@ -24,13 +24,15 @@ test.describe("Add a comment to a Book", () => {
     await booksPage.verifyBooksDisplayed();
     await donatePage.openDonateModal();
     await donatePage.donateBook("New Book", "Author X", "Fiction");
-    //await donatePage.verifyDonationSuccess();
     await booksPage.verifyBooksDisplayed();
     await booksPage.viewDetails("New Book Author X");
+    // Verify Error message when comment is Empty
     await commentsPage.addComment('');
     await commentsPage.verifyErrorComment();
+    // Add comment successfully
     await commentsPage.addComment("This is a beautiful book");
     await commentsPage.verifyComment("This is a beautiful book");
+    // Go back to Books
     await commentsPage.goBackToBooks();
     await booksPage.verifyBooksDisplayed();
   });
