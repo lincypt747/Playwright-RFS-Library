@@ -1,8 +1,8 @@
-Playwright Test Automation for RFS Library management System:
+# Playwright Test Automation for RFS Library management System:
 
 This project leverages Playwright with TypeScript to automate and validate key functionalities of RFS Library Management System
 
-Test Scenarios:
+## Test Scenarios:
 
 •	UI Testing 
 
@@ -14,7 +14,7 @@ Test Scenarios:
 
 •	Broken Endpoint Testing
 
-Project Structure:
+## Project Structure:
 
 •	Page Objects
 
@@ -23,6 +23,6 @@ Project Structure:
 •	Test Suites
 
 
-Instructions:
+## Instructions:
 
 Rename the .env-sample to .env and update the variables to connect to MySQL DB
