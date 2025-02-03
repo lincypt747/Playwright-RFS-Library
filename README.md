@@ -25,4 +25,4 @@ This project leverages Playwright with TypeScript to automate and validate key f
 
 ## Instructions:
 
-Rename the .env-sample to .env and update the variables to connect to MySQL DB
+Rename the **.env-sample** to **.env** and update the variables to connect to MySQL DB
